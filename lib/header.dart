@@ -74,9 +74,29 @@ class _HeaderState extends State<Header> {
                       )
                     ],
                   ),
-                )
+                ),
+                SizedBox(height: 20)
               ],
             ),
+            Positioned(
+              bottom: 0,
+              height: 50,
+              width: screenSize.width,
+              child: Container(
+                child: Card(
+                  margin: EdgeInsets.symmetric(horizontal: 50),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(15)),
+                  child: TextFormField(
+                    decoration: InputDecoration(
+                        border: InputBorder.none,
+                        labelText: "What would you like to eat?",
+                        suffixIcon: Icon(Icons.search),
+                        contentPadding: EdgeInsets.only(left: 20)),
+                  ),
+                ),
+              ),
+            )
           ],
         )
       ]),

@@ -45,7 +45,14 @@ class _HamburgerHomeState extends State<HamburgerHome> {
             )
           ],
         ),
-        Header()
+        Header(),
+        SliverList(
+            delegate: SliverChildListDelegate([
+          Text(
+            "Hamburger",
+            style: TextStyle(fontSize: 300),
+          )
+        ]))
       ]),
     );
   }
