@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'header.dart';
+import 'categories.dart';
 
 void main() {
   runApp(HamburgerApp());
@@ -51,13 +52,15 @@ class _HamburgerHomeState extends State<HamburgerHome> {
           ],
         ),
         Header(),
+        Categories(),
         SliverList(
-            delegate: SliverChildListDelegate([
-          Text(
-            "Hamburger",
-            style: TextStyle(fontSize: 300),
-          )
-        ]))
+          delegate: SliverChildListDelegate([
+            Text(
+              "Hamburger",
+              style: TextStyle(fontSize: 300),
+            )
+          ]),
+        )
       ]),
       extendBody: true,
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
